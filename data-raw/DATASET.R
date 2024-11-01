@@ -1,6 +1,8 @@
 ## code to prepare `DATASET` dataset goes here
 
-dummy_vec <- c(1, 2, 3, 4)
+library(readxl)
 
-usethis::use_data(dummy_vec, overwrite = TRUE)
+Metabolomics_data <- read_excel("data-raw/testPCA.xlsx")
+
+usethis::use_data(Metabolomics_data, overwrite = TRUE)
 
