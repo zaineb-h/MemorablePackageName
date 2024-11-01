@@ -25,30 +25,22 @@ The goal of MemorablePackageName is to ...
 You can install the development version of MemorablePackageName like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("MemorablePackageName")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve a common problem, such as multiplying two numbers:
 
 ```{r example}
 library(MemorablePackageName)
-## basic example code
+print(multiplier(3, 5))
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+This package also contains a raw dataset that can be used in case you happen to need some cool information. The dataset in this package includes data about the metabolites of patients with delirium. Wow!
 
-```{r cars}
-summary(cars)
+Here's a summary of the data:
+```{r}
+Metabolomics_data <- read_excel("data-raw/testPCA.xlsx")
+summary(Metabolomics_data)
 ```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-#plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
