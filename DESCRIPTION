@@ -1,0 +1,14 @@
+Package: MemorablePackageName
+Type: Package
+Title: A Toy Package for Illustration Purposes
+Version: 0.0.0.9000
+Author: 
+    person("Zaineb", "Hamoodi", "hamoodiz@someemailaddress.ca", role = c("aut", "cre"), comment = c(ORCID = "0000"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This is a description of the package, which essentially multiplies two numbers together.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
